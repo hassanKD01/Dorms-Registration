@@ -1,0 +1,22 @@
+.combo-box{
+    -fx-background-color: transparent;
+    -fx-border-radius: 10%;
+    -fx-border-color: white;
+    -fx-font-size:14px;
+}
+.combo-box .arrow-button{
+    -fx-background-color: white;
+    -fx-background-radius: 50%;
+}
+.combo-box .text {
+    -fx-fill: white ;
+}
+.combo-box .list-cell{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 10%;
+    -fx-text-fill: white;
+}
+.combo-box .list-view{
+    -fx-background-color: transparent;
+}

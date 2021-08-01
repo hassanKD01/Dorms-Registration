@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1566.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FemaleBlocksController">
+   <children>
+      <ImageView fitHeight="811.0" fitWidth="1567.0" layoutX="-4.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dorms2.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_RIGHT" blendMode="SRC_ATOP" opacity="0.7" prefHeight="120.0" prefWidth="1367.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView blendMode="OVERLAY" fitHeight="120.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/lulogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox layoutX="402.0" layoutY="483.0" prefHeight="200.0" prefWidth="202.0">
+         <children>
+            <Button fx:id="D" mnemonicParsing="false" onAction="#blockSelected" stylesheets="@../resources/style/Buttom.css" text="D">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/noun_building_1204844.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="811.0" layoutY="242.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="C" mnemonicParsing="false" onAction="#blockSelected" stylesheets="@../resources/style/Buttom.css" text="C">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/noun_building_1204844.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="547.0" layoutY="242.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="B" mnemonicParsing="false" onAction="#blockSelected" stylesheets="@../resources/style/Buttom.css" text="B">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/noun_building_1204844.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="256.0" layoutY="242.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="A" mnemonicParsing="false" onAction="#blockSelected" stylesheets="@../resources/style/Buttom.css" text="A">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/noun_building_1204844.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="693.0" layoutY="483.0" prefHeight="200.0" prefWidth="202.0">
+         <children>
+            <Button fx:id="E" mnemonicParsing="false" onAction="#blockSelected" stylesheets="@../resources/style/Button.css" text="E">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/noun_building_1204844.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="51.0" layoutY="142.0" mnemonicParsing="false" onAction="#backButton" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: black; -fx-background-radius: 36%; -fx-border-color: white; -fx-border-radius: 20%;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" prefHeight="120.0" prefWidth="410.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="359.0">
+               <children>
+                  <Label text="Lebanese" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="University" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="33.0" prefWidth="410.0" spacing="10.0">
+               <children>
+                  <Label text="Dormitories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Rafic Hariri Campus" textFill="#42f5d4">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="8.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="783.0" prefWidth="1566.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainpageController">
+   <children>
+      <ImageView fitHeight="811.0" fitWidth="1567.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dorms2.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_RIGHT" blendMode="SRC_ATOP" opacity="0.7" prefHeight="120.0" prefWidth="1367.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView blendMode="OVERLAY" fitHeight="120.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/lulogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="24.0" layoutY="233.0" opacity="0.51" prefHeight="358.0" prefWidth="255.0" style="-fx-background-color: black; -fx-background-radius: 10%;" />
+      <VBox alignment="CENTER" fillWidth="false" layoutX="35.0" layoutY="157.0" prefHeight="511.0" prefWidth="233.0" spacing="30.0">
+         <children>
+            <Label fx:id="label" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="241.0">
+               <children>
+                  <Label text="Go to add student page " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="where you can register new students" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="info and choosing an available room" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="in the dorms by filling their personal" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#Register_function" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20%;" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="327.0" layoutY="232.0" opacity="0.51" prefHeight="358.0" prefWidth="255.0" style="-fx-background-color: black; -fx-background-radius: 10%;" />
+      <VBox alignment="CENTER" fillWidth="false" layoutX="338.0" layoutY="157.0" prefHeight="511.0" prefWidth="233.0" spacing="30.0">
+         <children>
+            <Label fx:id="label1" text="Remove Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="241.0">
+               <children>
+                  <Label text="Go to remove student page " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="where you can cancel students " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="registration" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#Remove_function" prefHeight="35.0" prefWidth="156.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20%;" text="Remove Student" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="653.0" layoutY="232.0" opacity="0.51" prefHeight="358.0" prefWidth="255.0" style="-fx-background-color: black; -fx-background-radius: 10%;" />
+      <VBox alignment="CENTER" fillWidth="false" layoutX="664.0" layoutY="166.0" prefHeight="511.0" prefWidth="233.0" spacing="30.0">
+         <children>
+            <Label fx:id="label11" text="Search Student" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="241.0">
+               <children>
+                  <Label text="Go to search student page " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="where you can see all registred " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="students  informations," textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="and search for students using" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="their registration id." textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#Search_function" prefHeight="33.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20%;" text="Search Student" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="969.0" layoutY="232.0" opacity="0.51" prefHeight="358.0" prefWidth="255.0" style="-fx-background-color: black; -fx-background-radius: 10%;" />
+      <VBox alignment="CENTER" fillWidth="false" layoutX="980.0" layoutY="157.0" prefHeight="511.0" prefWidth="233.0" spacing="30.0">
+         <children>
+            <Label fx:id="label111" text="Update registration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="80.0" prefWidth="241.0">
+               <children>
+                  <Label text="Go to update registration page " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="where you can modify registred " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="students  informations," textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="and change room registration" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="using their registration id." textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#Update_function" prefHeight="32.0" prefWidth="147.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 20%;" text="Update registration" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="120.0" prefWidth="410.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="359.0">
+               <children>
+                  <Label text="Lebanese" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="University" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="33.0" prefWidth="410.0" spacing="10.0">
+               <children>
+                  <Label text="Dormitories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Rafic Hariri Campus" textFill="#42f5d4">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="8.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Button layoutX="50.0" layoutY="158.0" mnemonicParsing="false" onAction="#logoutButton" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: black; -fx-background-radius: 36%; -fx-border-color: white; -fx-border-radius: 20%;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

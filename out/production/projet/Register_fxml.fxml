@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Register_controller">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField layoutX="101.0" layoutY="37.0" />
+      <Label layoutX="28.0" layoutY="41.0" text="First name" />
+      <Label layoutX="286.0" layoutY="41.0" text="Middle name" />
+      <TextField layoutX="371.0" layoutY="37.0" />
+      <TextField layoutX="645.0" layoutY="37.0" />
+      <Label layoutX="578.0" layoutY="41.0" text="Last name" />
+      <Label fx:id="label1" layoutX="33.0" layoutY="218.0" minHeight="16" minWidth="69" text="Id" />
+      <TextField layoutX="84.0" layoutY="214.0" />
+      
+            <RadioButton fx:id="rb1" layoutX="35.0" layoutY="123.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup></RadioButton>
+            <RadioButton fx:id="rb2" layoutX="155.0" layoutY="123.0" mnemonicParsing="false" text="Female" toggleGroup="$toggleGroup" />
+      <Label layoutX="23.0" layoutY="303.0" text="Room number : " />
+      <Label layoutX="138.0" layoutY="303.0" />
+      <Label layoutX="23.0" layoutY="348.0" text="Block :" />
+      <Label layoutX="85.0" layoutY="348.0" prefHeight="18.0" prefWidth="0.0" />
+        
+    </children>
+</AnchorPane>

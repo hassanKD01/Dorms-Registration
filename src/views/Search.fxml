@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1566.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Search_controller">
+    <stylesheets>
+        <URL value="@search.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="811.0" fitWidth="1567.0" opacity="0.74" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/dorms2.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_RIGHT" blendMode="SRC_ATOP" opacity="0.7" prefHeight="120.0" prefWidth="1367.0" style="-fx-background-color: gray;">
+         <children>
+            <ImageView blendMode="OVERLAY" fitHeight="120.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/lulogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <TableView fx:id="students" layoutX="130.0" layoutY="247.0" prefHeight="381.0" prefWidth="967.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-text-fill: white;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="230.0" style="fx-background-color: transparent; fx-text-fill: white; fx-border-color: white;" text="Name" />
+          <TableColumn fx:id="id" minWidth="6.33331298828125" prefWidth="92.0" text="ID" />
+            <TableColumn fx:id="block" prefWidth="40.0" text="Block" />
+            <TableColumn fx:id="floor" prefWidth="38.0" text="Floor" />
+            <TableColumn fx:id="room" prefWidth="40.66668701171875" text="Room" />
+            <TableColumn fx:id="tel" prefWidth="184.0" text="Telephone" />
+            <TableColumn fx:id="email" prefWidth="269.0" text="Email" />
+            <TableColumn fx:id="bloodType" prefWidth="72.33331298828125" text="Blood type" />
+        </columns>
+      </TableView>
+      <Button layoutX="990.0" layoutY="181.0" mnemonicParsing="false" onAction="#mainPageButton" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #ececec; -fx-border-color: white;" text="To main page">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="870.0" layoutY="181.0" mnemonicParsing="false" onAction="#Update_function" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #ececec; -fx-border-color: white;" text="To update page">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="742.0" layoutY="181.0" mnemonicParsing="false" onAction="#Remove_function" prefHeight="32.0" prefWidth="128.0" style="-fx-background-color: #ececec; -fx-border-color: white;" text="To remove page">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <VBox alignment="CENTER" prefHeight="120.0" prefWidth="410.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="359.0">
+               <children>
+                  <Label text="Lebanese" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="University" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="33.0" prefWidth="410.0" spacing="10.0">
+               <children>
+                  <Label text="Dormitories" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Rafic Hariri Campus" textFill="#42f5d4">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="8.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <TextField fx:id="searchId" layoutX="130.0" layoutY="181.0" onKeyReleased="#search" promptText="Search by name" style="-fx-background-color: #ececec; -fx-border-color: white; -fx-prompt-text-fill: black;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
